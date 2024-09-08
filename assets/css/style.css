@@ -431,7 +431,7 @@ a {
   background: #fff;
   cursor: pointer;
   transition: 0.25s;
-  color: #fff;
+  color: var(--color-gray);
 }
 
 .team-item__img-bg {
