@@ -58,11 +58,30 @@ a {
   font-weight: 400;
   border-radius: 999px;
   border: none;
+  position: relative;
+  overflow: hidden;
 }
 
-.btn:hover {
-  opacity: 0.9;
+.btn::after {
+  content: "";
+  background-color: orange;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  transition: width 0.3s linear;
 }
+
+.btn:hover::after {
+  width: 100%;
+}
+
+.btn-transition {
+  position: relative;
+  z-index: 1;
+}
+
 /* ==========Header-top========== */
 .header {
   padding-top: 30px;
