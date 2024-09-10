@@ -26,7 +26,7 @@ a {
 .container {
   width: 1170px;
   margin: 0 auto;
-  max-width: calc(100%-48px);
+  max-width: calc(100% - 48px);
   min-width: 1170px;
 }
 
@@ -156,12 +156,13 @@ a {
   font-weight: 600;
   line-height: 1.14;
   letter-spacing: -1.4px;
+  animation-iteration-count: infinite;
 }
 
 .hero__desc {
   margin-top: 22px;
   color: #c9d2da;
-  font-family: Sora;
+  font-family: Sora, serif;
   font-size: 1.8rem;
   font-weight: 300;
   line-height: 1.67;
